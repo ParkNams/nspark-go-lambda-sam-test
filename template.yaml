@@ -6,7 +6,7 @@ Resources:
     Type: AWS::Serverless::Api
     Properties:
       StageName: prod
-  TestFunction: # Adds a GET api endpoint at "/" to the ApiGatewayApi via an Api event
+  TestFunction:
     Type: AWS::Serverless::Function
     Properties:
       Events:
