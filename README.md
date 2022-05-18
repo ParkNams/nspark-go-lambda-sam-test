@@ -3,7 +3,6 @@
 ## build and test
 
 ```shell
-go build main.go
 
 sam build
 
