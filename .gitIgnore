@@ -1,3 +1,5 @@
 .aws-sam
 main
 packaged.yaml
+
+samconfig.toml

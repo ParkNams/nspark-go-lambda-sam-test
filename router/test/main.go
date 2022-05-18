@@ -20,7 +20,7 @@ type ResponseBody struct {
 func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 	fmt.Println("test")
 	send := controller.UserController()
-	data, err := json.Marshal(ResponseBody{Message: "test", Data: send})
+	data, err := json.Marshal(ResponseBody{Message: "test10", Data: send})
 	if err != nil {
 		log.Panic(err)
 	}

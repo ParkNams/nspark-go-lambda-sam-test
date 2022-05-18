@@ -20,6 +20,8 @@ Resources:
       Runtime: go1.x
       Handler: test
       CodeUri: ./router/test
+#      Architectures:
+#        - x86_64
   UserFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -34,4 +36,15 @@ Resources:
       Runtime: go1.x
       Handler: user
       CodeUri: ./router/user # build 파일 위치
-
+#      Architectures:
+#        - x86_64
+#    Metadata:
+#      DockerTag: go-sam-lambda
+#  MyLayer:
+#    Type: AWS::Serverless::LayerVersion
+#    Properties:
+#      ContentUri: ./
+#      CompatibleRuntimes:
+#        - go1.x
+#    Metadata:
+#      BuildMethod: makefile
